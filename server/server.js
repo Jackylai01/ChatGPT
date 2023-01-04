@@ -20,7 +20,7 @@ app.use(express.json());
 
 
 app.get("/",(req,res)=>{
-   res.send({msg:"hi"})
+   res.status(200).send({msg:"hi"})
 })
 
 app.post("/", async (req, res) => {
