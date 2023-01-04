@@ -18,6 +18,11 @@ app.use(cors());
 //中間件
 app.use(express.json());
 
+
+app.get("/",(req,res)=>{
+   res.send({msg:"hi"})
+})
+
 app.post("/", async (req, res) => {
   try {
     //使用者在對話框輸入的內容
