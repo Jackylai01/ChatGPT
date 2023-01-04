@@ -82,7 +82,7 @@ const handleSubmit = async (e) => {
 
   //fetch 後端的api ->bot's response
 
-  const response = await fetch("http://localhost:8000", {
+  const response = await fetch("https://jackychatgpt.onrender.com/", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
